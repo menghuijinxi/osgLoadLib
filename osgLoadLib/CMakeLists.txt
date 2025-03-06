@@ -81,3 +81,6 @@ add_custom_command(
         $<TARGET_FILE_DIR:osgLoadLib>/osgPlugins-3.6.5
 )
 ENDIF()
+
+install(TARGETS osgLoadLib)
+install(FILES include/macro.h include/IOsgbLoad.h DESTINATION include)
