@@ -1,0 +1,12 @@
+{
+	"name": "osgloadlib",
+	"version": "0.0.1",
+	"port-version": 1,
+	"description": "供ue使用的加载osgb的库，这个可通过提供接口，隐藏了直接调用osg库的代码，可以让ue在linux上不用开启rtti也能正常加载osgb",
+	"homepage": "http://10.1.1.58:8418/SunXuJing/osgLoadLib.git",
+	"license": "Apache-2.0",
+	"dependencies":[
+		"osg",
+		"fmt"
+	]
+}

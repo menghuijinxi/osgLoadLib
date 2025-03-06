@@ -1,0 +1,20 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "linux-x64-Debug",
+            "displayName": "linux-x64-Debug",
+            "description": "使用编译器: C = /usr/bin/gcc-10, CXX = /usr/bin/g++-10",
+            "binaryDir": "${sourceDir}/out/build/${presetName}",
+            "cacheVariables": {
+                "CMAKE_INSTALL_PREFIX": "${sourceDir}/out/install/${presetName}",
+                "CMAKE_C_COMPILER": "/usr/bin/gcc-10",
+                "CMAKE_CXX_COMPILER": "/usr/bin/g++-10",
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CMAKE_C_FLAGS": "-m64",
+                "CMAKE_CXX_FLAGS": "-m64",
+                "CMAKE_MAKE_PROGRAM": "/usr/bin/make"
+            }
+        }
+    ]
+}
