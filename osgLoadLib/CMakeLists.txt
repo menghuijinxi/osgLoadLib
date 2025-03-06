@@ -22,9 +22,9 @@ target_link_libraries(osgLoadLib PRIVATE
         $<$<CONFIG:Debug>:${osg_Debug_Dir}/lib/libosgd.so>
         $<$<CONFIG:Debug>:${osg_Debug_Dir}/lib/libosgDBd.so>
         $<$<CONFIG:Debug>:${osg_Debug_Dir}/lib/libOpenThreadsd.so>
-        $<$<CONFIG:Release>:${osg_Release_Dir}/lib/libosg.so>
-        $<$<CONFIG:Release>:${osg_Release_Dir}/lib/libosgDB.so>
-        $<$<CONFIG:Release>:${osg_Release_Dir}/lib/libOpenThreads.so>
+        $<$<CONFIG:Release>:${osg_Release_Dir}/lib/libosg.so.3.6.5>
+        $<$<CONFIG:Release>:${osg_Release_Dir}/lib/libosgDB.so.3.6.5>
+        $<$<CONFIG:Release>:${osg_Release_Dir}/lib/libOpenThreads.so.3.3.1>
 )
 ENDIF()
 
